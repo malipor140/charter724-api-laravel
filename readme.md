@@ -162,7 +162,7 @@ But if you didn't use migration, you can use it.
 $airports = Charter724::getAirports();
 ```
 
-Flights the next 15 days with the lowest price
+Flights the next 15 days with the lowest price.
 
 ```php
 $available15Days = Charter724::getAvailable15Days($fromIATA, $toIATA);
@@ -172,4 +172,17 @@ $fromIATA = "THR";
 $toIATA = "MHD";
 $available15Days = Charter724::getAvailable15Days($fromIATA, $toIATA)
 ```
+
+Available flights for the requested path.
+
+```php
+$availableFlights = Charter724::getAvailableFlights($fromIATA, $toIATA, $date);
+
+// example
+$fromIATA = "THR";
+$toIATA = "MHD";
+$date = "2019-05-17";
+$availableFlights = Charter724::getAvailableFlights($fromIATA, $toIATA, $date);
+```
+
 

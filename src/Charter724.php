@@ -61,4 +61,19 @@ class Charter724
 
         return $available15Days;
     }
+
+    /**
+     * TODO:
+     * Some Description About This
+     * @param $fromIATA
+     * @param $toIATA
+     * @param $date
+     * @return array
+     */
+    public function getAvailableFlights($fromIATA, $toIATA, $date)
+    {
+        $availableFlights = $this->repo->getAvailableFlights($fromIATA, $toIATA, $date);
+
+        return $availableFlights;
+    }
 }

@@ -138,4 +138,30 @@ class Charter724Repository
 
         return $available15Days;
     }
+
+    /**
+     * TODO:
+     * Some Description About This
+     * @param $fromIATA
+     * @param $toIATA
+     * @param $date
+     * @return array
+     */
+    public function getAvailableFlights($fromIATA, $toIATA, $date)
+    {
+        $availableFlights = $this->client->request('POST', 'Available', [
+            'headers' => [
+                'Authorization' => "Bearer " . $this->getAccessToken(),
+            ],
+            'form_params' => [
+                'from_flight' => $fromIATA,
+                'to_flight' => $toIATA,
+                'date_flight' => $date
+            ]
+        ]);
+
+        $availableFlights = json_decode($availableFlights->getBody(), true)['Data'];
+
+        return $availableFlights;
+    }
 }
