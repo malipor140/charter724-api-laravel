@@ -47,4 +47,18 @@ class Charter724
     {
         Airport::all();
     }
+
+    /**
+     * TODO:
+     * Some Description About This
+     * @param $fromIATA
+     * @param $toIATA
+     * @return array
+     */
+    public function getAvailable15Days($fromIATA, $toIATA)
+    {
+        $available15Days = $this->repo->getAvailable15Days($fromIATA, $toIATA);
+
+        return $available15Days;
+    }
 }

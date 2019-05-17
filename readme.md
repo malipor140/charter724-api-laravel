@@ -142,7 +142,7 @@ php artisan vendor:publish --provider="Adlino\Charter724\Charter724ServiceProvid
 php artisan migrate
 ```
 
-You can Store Airport Lists to Database via Command:
+You can Store Airport List to Database via Command:
 
 ```bash
 php artisan charter724:airports
@@ -153,12 +153,23 @@ php artisan charter724:airports
 If you have used migration to create table, you can use it to return airport list from database.
 
 ```php
-Charter724::getAirportsFromDB();
+$airports = Charter724::getAirportsFromDB();
 ```
 
 But if you didn't use migration, you can use it.
 
 ```php
-Charter724::getAirports();
+$airports = Charter724::getAirports();
+```
+
+Flights the next 15 days with the lowest price
+
+```php
+$available15Days = Charter724::getAvailable15Days($fromIATA, $toIATA);
+
+// example
+$fromIATA = "THR";
+$toIATA = "MHD";
+$available15Days = Charter724::getAvailable15Days($fromIATA, $toIATA)
 ```
 
