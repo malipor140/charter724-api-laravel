@@ -1,0 +1,37 @@
+{
+    "name": "alirezahamedashki/charter724-api-laravel",
+    "description": "Laravel 5.* Integration with RESTful Api of Charter724",
+    "keywords": [
+        "Laravel",
+        "Charter724",
+        "Charter724 Api",
+        "Charter724 Laravel Api",
+        "Charter724 Laravel Package"
+    ],
+    "authors": [
+        {
+            "name": "Alireza Hamedashki",
+            "email": "a.hamedashki@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adlino\\Charter724\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adlino\\Charter724\\Charter724ServiceProvider"
+            ],
+            "aliases": {
+                "Charter724": "Adlino\\Charter724\\Facades\\Charter724"
+            }
+        }
+    }
+}
