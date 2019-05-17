@@ -114,4 +114,28 @@ class Charter724Repository
 
         return $airports;
     }
+
+    /**
+     * TODO:
+     * Some Description About This
+     * @param $fromIATA
+     * @param $toIATA
+     * @return array
+     */
+    public function getAvailable15Days($fromIATA, $toIATA)
+    {
+        $available15Days = $this->client->request('POST', 'Available15Days', [
+            'headers' => [
+                'Authorization' => "Bearer " . $this->getAccessToken(),
+            ],
+            'form_params' => [
+                'from_flight' => $fromIATA,
+                'to_flight' => $toIATA
+            ]
+        ]);
+
+        $available15Days = json_decode($available15Days->getBody(), true)['Data'];
+
+        return $available15Days;
+    }
 }
