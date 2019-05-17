@@ -128,3 +128,37 @@ return [
 
 ];
 ```
+
+You can Generate Access Token via Command:
+
+```bash
+php artisan charter724:token
+```
+
+You can publish the migration with (We recommend):
+
+```bash
+php artisan vendor:publish --provider="Adlino\Charter724\Charter724ServiceProvider" --tag=migrations
+php artisan migrate
+```
+
+You can Store Airport Lists to Database via Command:
+
+```bash
+php artisan charter724:airports
+```
+
+## Usage
+
+If you have used migration to create table, you can use it to return airport list from database.
+
+```php
+Charter724::getAirportsFromDB();
+```
+
+But if you didn't use migration, you can use it.
+
+```php
+Charter724::getAirports();
+```
+
