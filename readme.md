@@ -7,6 +7,8 @@
 
 Laravel 5.* Integration with RESTful Api of Charter724
 
+![Screen](https://raw.githubusercontent.com/alirezahamedashki/charter724-api-laravel/master/img/charter724.png)
+
 ## Installation
 
 This package can be used in Laravel 5.4 or higher.
