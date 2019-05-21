@@ -7,7 +7,7 @@
 
 Laravel 5.* Integration with RESTful Api of Charter724
 
-![Charter724](https://github.com/alirezahamedashki/charter724-api-laravel/blob/master/img/charter724.png)
+![Screen](https://raw.githubusercontent.com/alirezahamedashki/charter724-api-laravel/master/img/charter724.png)
 
 ## Installation
 
