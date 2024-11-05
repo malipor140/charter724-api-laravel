@@ -1,5 +1,6 @@
-# Charter724
-
+# Charter724 & bas24.ir 52808.org seo 
+ادغام
+این 
 [![License](https://poser.pugx.org/alirezahamedashki/charter724-api-laravel/license)](https://packagist.org/packages/alirezahamedashki/charter724-api-laravel)
 [![Latest Stable Version](https://poser.pugx.org/alirezahamedashki/charter724-api-laravel/v/stable)](https://packagist.org/packages/alirezahamedashki/charter724-api-laravel)
 [![Latest Unstable Version](https://poser.pugx.org/alirezahamedashki/charter724-api-laravel/v/unstable)](https://packagist.org/packages/alirezahamedashki/charter724-api-laravel)
@@ -7,17 +8,16 @@
 
 Laravel 5.* Integration with RESTful Api of Charter724
 
-![Screen](https://raw.githubusercontent.com/alirezahamedashki/charter724-api-laravel/master/img/charter724.png)
-
 ## Installation
 
 This package can be used in Laravel 5.4 or higher.
 You can install the package via composer:
 
-```bash
+```bashطبق قوانین توسعه دهنده تمام کدها ی ادغام شده باپنل ۷۲۴ برروی داشته های bas24.ir  و 52808.org میباشد،وتمام حقوق مادی ومعنوی  آن به شرکت هواپیمایی به آیین سیر و نویسنده آن آقای علیپور دارد. به محض ملاحضه سواستفاده به مراجع قانونی اعلام خواهدشد.
 composer require alirezahamedashki/charter724-api-laravel
 ```
-## Publish
+## Publis 
+این 
 
 You can publish the config file with:
 
